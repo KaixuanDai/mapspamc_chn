@@ -1,41 +1,20 @@
-
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# mapspamc
+# mapspamc_chn
 
-<!-- badges: start -->
+This project is based on the [`mapspamc`](https://github.com/michielvandijk/mapspamc) R
+package and builds a spatial distribution dataset of multiple crops at a resolution of 1km for China.
 
-[![Lifecycle:
-experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-[![Project Status: Active – The project has reached a stable, usable
-state and is being actively
-developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
-<!-- [![R-CMD-check](https://github.com/michielvandijk/mapspamc/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/michielvandijk/mapspamc/actions/workflows/R-CMD-check.yaml) -->
-<!-- badges: end -->
 
-The aim of the [`mapspamc` R
-package](https://github.com/michielvandijk/mapspamc) is to facilitate
-the creation of country level crop distribution maps. The model builds
-on the global version of the [Spatial Production Allocation model
-(SPAM)](www.mapspam.info) (You and Wood 2006; You, Wood, and Wood-Sichra
-2009; You et al. 2014; Yu et al. 2020), which uses a cross-entropy
-optimization approach to ‘pixelate’ national and subnational crop
-statistics on a spatial grid at a resolution of 5 arc minutes (\~ 10 x
-10 km). `mapspamc` provides the necessary infrastructure to run SPAM at
-the country level and makes it possible to incorporate national sources
-of information and potentially create maps at a higher resolution of 30
-arc seconds (\~ 1 x 1 km) (Dijk et al. 2022). More information can be
-found on the [package
-website](https://michielvandijk.github.io/mapspamc/).
+## Validation
 
-## Installation
+- Validation at province scale for wheat:
+<img width="300" height="300" src="https://github.com/user-attachments/assets/b174aad0-acd9-495b-acd9-8531ecc8cb51"/>
 
-To install `mapspamc`:
+- Validation at prefecture scale for wheat:
+<img width="300" height="300" src="https://github.com/user-attachments/assets/0883eef5-b413-41c6-861f-a84b2f0f8540"/>
 
-``` r
-install.packages("remotes")
-remotes::install_github("michielvandijk/mapspamc")
-```
+
 
 ## References
 
